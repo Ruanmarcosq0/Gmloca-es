@@ -1,0 +1,16 @@
+# GM Locações
+
+> Serviços de transportes, Munck e locação de equipamentos em Urubici, Santa Catarina, e região.
+
+## Contato
+- Instagram: https://www.instagram.com/gmlocacoesmunck/
+- E-mail: gmltdalocacoes@gmail.com
+
+## Informações
+O atendimento, a disponibilidade dos equipamentos, a capacidade adequada para cada carga, as datas e os valores devem ser consultados diretamente com a empresa. O site não publica capacidades de carga, preços ou horários não confirmados.
+
+## Conteúdo
+- [Serviços](./#servicos)
+- [Sobre a empresa](./#sobre)
+- [Dúvidas frequentes](./#duvidas)
+- [Solicitar orçamento](./#orcamento)
