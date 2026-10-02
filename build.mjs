@@ -1,4 +1,4 @@
-import {mkdirSync,copyFileSync,readFileSync,writeFileSync} from 'node:fs';
+import {mkdirSync,cpSync,copyFileSync,readFileSync,writeFileSync} from 'node:fs';
 mkdirSync('dist',{recursive:true});
 let html=readFileSync('index.html','utf8');
 const host=process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? 'https://'+process.env.VERCEL_PROJECT_PRODUCTION_URL : '');
@@ -12,3 +12,5 @@ if(preview) html=html.replace('content="index,follow"','content="noindex,nofollo
 writeFileSync('dist/index.html',html);
 writeFileSync('dist/robots.txt',preview?'User-agent: *\nDisallow: /\n':'User-agent: *\nAllow: /\n'+(origin?'Sitemap: '+origin+'/sitemap.xml\n':''));
 copyFileSync('llms.txt','dist/llms.txt');
+
+cpSync('assets','dist/assets',{recursive:true});
